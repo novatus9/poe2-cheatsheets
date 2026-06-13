@@ -5,7 +5,7 @@ import preact from '@astrojs/preact';
 // - For a PROJECT site (https://<user>.github.io/<repo>/) set `base` to '/<repo>'.
 // - For a USER/ORG site (https://<user>.github.io/) remove `base` (or set to '/').
 // Update `site` to your final URL so canonical links/SEO are correct.
-const SITE = 'https://chiunlin.github.io';
+const SITE = 'https://novatus9.github.io';
 const BASE = '/poe2-cheatsheets';
 
 export default defineConfig({
