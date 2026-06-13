@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import Cheatsheet from '../components/Cheatsheet.tsx';
+import campaign from '../data/campaign-rewards.json';
+import '../styles/cheatsheet.css';
+import type { CheatsheetData } from '../data/types';
+
+const data = campaign as CheatsheetData;
+---
+
+<Base title={`PoE2 ${data.title} — Cheatsheet (Patch ${data.patch})`}>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">PoE2 <span class="accent">Cheatsheets</span></h1>
+      <p class="site-sub">{data.title} — a fast quick reference.</p>
+      <div class="badges">
+        <span class="pill">Patch {data.patch}</span>
+        <span class="pill">Verified {data.lastVerified}</span>
+        <span class="pill">{data.rewards.length} rewards tracked</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <p class="intro">{data.intro}</p>
+      <Cheatsheet client:load data={data} />
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Data hand-curated and cross-referenced from community sources. Stats can change with
+        patches — verify against in-game before relying on a choice. Contributions welcome via the repo.
+      </p>
+    </div>
+  </footer>
+</Base>

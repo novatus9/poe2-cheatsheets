@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+.astro/
+
+# env / local
+.env
+.env.production
+.DS_Store
+
+# editor
+.vscode/
+*.log

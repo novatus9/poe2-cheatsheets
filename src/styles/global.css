@@ -1,0 +1,108 @@
+:root {
+  /* Light, warm parchment palette with a restrained PoE-gold accent. */
+  --bg: #f5f1e8;
+  --surface: #fffdf8;
+  --surface-2: #efe9da;
+  --border: #ddd3bf;
+  --text: #2b2620;
+  --text-soft: #6b6250;
+  --accent: #936a2c;
+  --accent-strong: #7a531d;
+  --crit: #b23b2e;
+  --crit-bg: #f8e7e3;
+  --useful: #8a6d1f;
+  --useful-bg: #f6efd6;
+  --minor: #6b6250;
+  --minor-bg: #ece6d7;
+  --good: #3f7d4f;
+  --good-bg: #e3f0e5;
+  --shadow: 0 1px 2px rgba(43, 38, 32, 0.06), 0 4px 16px rgba(43, 38, 32, 0.06);
+  --radius: 12px;
+  --maxw: 1100px;
+  --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+a { color: var(--accent-strong); }
+
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ---- Header ---- */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
+}
+.site-header .container {
+  padding-top: 22px;
+  padding-bottom: 18px;
+}
+.site-title {
+  margin: 0;
+  font-size: 1.55rem;
+  letter-spacing: -0.01em;
+}
+.site-title .accent { color: var(--accent-strong); }
+.site-sub {
+  margin: 4px 0 0;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-soft);
+}
+
+main { padding: 22px 0 64px; }
+
+.intro {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  box-shadow: var(--shadow);
+}
+
+footer.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--text-soft);
+  font-size: 0.85rem;
+  padding: 20px 0 40px;
+}
+footer.site-footer a { color: var(--accent-strong); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .reward-card { transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+}

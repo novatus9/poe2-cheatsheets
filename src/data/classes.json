@@ -1,0 +1,57 @@
+{
+  "classes": [
+    {
+      "name": "Warrior",
+      "ascendancies": ["Titan", "Smith of Kitava", "Warbringer"],
+      "archetypes": ["attack", "armour", "life"]
+    },
+    {
+      "name": "Witch",
+      "ascendancies": ["Lich", "Infernalist", "Bloodmage"],
+      "archetypes": ["caster", "minion", "chaos-dot", "energy-shield"]
+    },
+    {
+      "name": "Ranger",
+      "ascendancies": ["Deadeye", "Pathfinder"],
+      "archetypes": ["attack", "evasion", "crit"]
+    },
+    {
+      "name": "Mercenary",
+      "ascendancies": ["Witchhunter", "Tactician", "Gemling Legionnaire"],
+      "archetypes": ["attack", "crit", "evasion"]
+    },
+    {
+      "name": "Monk",
+      "ascendancies": ["Martial Artist", "Invoker", "Acolyte of Chayula"],
+      "archetypes": ["attack", "caster", "evasion", "energy-shield"]
+    },
+    {
+      "name": "Sorceress",
+      "ascendancies": ["Disciple of Varashta", "Stormweaver", "Chronomancer"],
+      "archetypes": ["caster", "crit", "energy-shield", "elemental"]
+    },
+    {
+      "name": "Druid",
+      "ascendancies": ["Oracle", "Shaman"],
+      "archetypes": ["caster", "minion", "life", "attack"]
+    },
+    {
+      "name": "Huntress",
+      "ascendancies": ["Spirit Walker", "Amazon", "Ritualist"],
+      "archetypes": ["attack", "crit", "evasion", "minion"]
+    }
+  ],
+  "archetypeLabels": {
+    "attack": "Attack / Martial",
+    "caster": "Caster / Spells",
+    "minion": "Minions",
+    "crit": "Crit",
+    "energy-shield": "Energy Shield",
+    "armour": "Armour",
+    "evasion": "Evasion",
+    "chaos-dot": "Chaos / DoT",
+    "life": "Life",
+    "mana-stacking": "Mana Stacking",
+    "elemental": "Elemental"
+  }
+}
