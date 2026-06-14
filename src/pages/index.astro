@@ -1,39 +1,34 @@
 ---
 import Base from '../layouts/Base.astro';
-import Cheatsheet from '../components/Cheatsheet.tsx';
-import campaign from '../data/campaign-rewards.json';
-import '../styles/cheatsheet.css';
-import type { CheatsheetData } from '../data/types';
+import { SHEETS } from '../data/sheets';
 
-const data = campaign as CheatsheetData;
+const baseNoSlash = import.meta.env.BASE_URL.replace(/\/$/, '');
+const href = (slug: string) => (slug ? `${baseNoSlash}/${slug}` : `${baseNoSlash}/`);
 ---
 
-<Base title={`PoE2 ${data.title} — Cheatsheet (Patch ${data.patch})`}>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="site-title">PoE2 <span class="accent">Cheatsheets</span></h1>
-      <p class="site-sub">{data.title} — a fast quick reference.</p>
-      <div class="badges">
-        <span class="pill">Patch {data.patch}</span>
-        <span class="pill">Verified {data.lastVerified}</span>
-        <span class="pill">{data.rewards.length} rewards tracked</span>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-      <p class="intro">{data.intro}</p>
-      <Cheatsheet client:load data={data} />
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>
-        Data hand-curated and cross-referenced from community sources. Stats can change with
-        patches — verify against in-game before relying on a choice. Contributions welcome via the repo.
+<Base title="PoE2 Cheatsheets — fast quick references for Path of Exile 2">
+  <div class="container">
+    <section class="sheet-hero">
+      <h1 class="sheet-title">Path of Exile 2 Cheatsheets</h1>
+      <p class="intro">
+        Fast, mobile-friendly quick references for Path of Exile 2 (patch 0.5, Return of the
+        Ancients). Hand-curated and easy to update as the game changes. Pick a sheet:
       </p>
+    </section>
+
+    <div class="sheet-grid">
+      {
+        SHEETS.map((s) => (
+          <a class="sheet-card" href={href(s.slug)}>
+            <div class="sheet-card-head">
+              <h2>{s.title}</h2>
+              {s.status === 'soon' && <span class="pill">Soon</span>}
+            </div>
+            <p>{s.blurb}</p>
+            <span class="sheet-card-go">Open →</span>
+          </a>
+        ))
+      }
     </div>
-  </footer>
+  </div>
 </Base>

@@ -1,0 +1,156 @@
+{
+  "title": "Resistances & Defenses",
+  "patch": "0.5.2",
+  "lastVerified": "2026-06-13",
+  "intro": "How damage mitigation works in PoE2 0.5 (Return of the Ancients). The campaign is Acts 1–4 + 3 Interludes, played once — Cruel difficulty and the old 6-act layout were removed in 0.3, so ignore any guide mentioning them. The only hard caps are 75% resistance (90% with +max mods) and 90% damage reduction; almost everything else is build-specific.",
+  "sections": [
+    {
+      "id": "elemental",
+      "heading": "Elemental Resistances (Fire / Cold / Lightning)",
+      "blurb": "Your single biggest survival lever. Maps are balanced assuming you're capped — an uncapped element is where you die.",
+      "table": {
+        "columns": ["Stat", "Value", "Note"],
+        "rows": [
+          ["Default cap", "75%", "Resistances cap at 75% by default."],
+          ["Hard cap (with +max mods)", "90%", "Only \"+% to Maximum [Element] Resistance\" can push past 75%, never above 90%."],
+          ["Practical target", "75% all three, always", "Non-negotiable before mapping."],
+          ["Penalty rate", "−10% per stage", "Permanent, applied as you progress through the campaign."],
+          ["Total endgame penalty", "−60% to all ele res", "Across the full 0.5 campaign (Acts 1–4 + interludes)."],
+          ["Raw res to show 75%", "~135%", "From gear + tree (135 − 60 = 75)."],
+          ["Campaign res bonuses", "up to +20%", "Beira +10% Cold (A1), Blackjaw +10% Fire (A3), Halls of the Dead choices — partly offset the penalty."],
+          ["Chaos exempt?", "Yes", "The −10%/stage penalty never touches chaos res."]
+        ]
+      },
+      "cards": [
+        {
+          "title": "Why capping matters",
+          "body": "Resistance is linear: at X% you take (100 − X)% of the hit. 0% → full damage, 50% → half, 75% → a quarter, 90% → a tenth. Going 50% → 75% halves the damage you take; 75% → 90% cuts it a further 2.5×. Overcap past 135% raw as insurance against map mods and enemies that shred your res."
+        },
+        {
+          "title": "Raising MAX resistance (75 → 90)",
+          "body": "Only \"+% to Maximum [Element] Resistance\" mods raise the cap — found on some gear suffixes, a few passive nodes, and select uniques. Ordinary \"+% Resistance\" just fills toward the cap; it never raises it."
+        }
+      ],
+      "note": "⚠️ Verify the −60% total on your own character sheet after the campaign. Older guides cite −40%, but that traces to the pre-0.3 \"end of Act 3 Cruel\" checkpoint, before Act 4 + Interludes existed."
+    },
+    {
+      "id": "chaos",
+      "heading": "Chaos Resistance",
+      "table": {
+        "columns": ["Stat", "Value", "Note"],
+        "rows": [
+          ["Cap", "75% (90% hard)", "Same cap structure as elemental."],
+          ["Campaign penalty", "None", "The −10%/stage penalty never applies to chaos."],
+          ["Target", "Positive while leveling → 75% endgame", "0.5 endgame throws much more chaos damage."],
+          ["Why it's harder", "Fewer mods roll it", "With no penalty, fewer sources grant chaos res, so capping it competes for the same slots. Flux currencies can convert surplus res between types."]
+        ]
+      }
+    },
+    {
+      "id": "layers",
+      "heading": "Defensive Layers",
+      "blurb": "Stack more than one — no single layer covers everything.",
+      "cards": [
+        {
+          "title": "Armour — physical only",
+          "value": "DR cap 90%",
+          "body": "Mitigates physical hit damage only. DR = Armour / (Armour + 12 × hit), so it diminishes against big hits: strong vs many small hits, weak vs a few large ones. Roughly 36× the incoming hit = 75% reduction of it."
+        },
+        {
+          "title": "Evasion — avoid hits",
+          "value": "95% cap",
+          "body": "Chance to completely avoid a hit — both attacks AND spells since 0.3 (older 'attacks only' guides are wrong), except a few un-evadable telegraphed boss attacks. Uses a deterministic entropy counter, so no lucky/unlucky streaks."
+        },
+        {
+          "title": "Energy Shield — rechargeable buffer",
+          "body": "Absorbs all hit damage (including chaos) before Life — but chaos removes 2× ES, and damage-over-time (bleed/poison) bypasses it. Recharge starts ~4s after the last hit at ~12.5% max ES/sec. 0.5 nerfed ES-recharge passive nodes."
+        },
+        {
+          "title": "Block — fully negate a hit",
+          "value": "75% (90% hard)",
+          "body": "Chance to negate all damage from a strike or projectile. Requires a shield, a staff/quarterstaff, or dual-wielding."
+        },
+        {
+          "title": "Runic Ward — NEW in 0.5",
+          "body": "A cheat-death layer beneath Life and ES: when a hit would drop you to 1 Life, Ward takes over, drains, then regenerates on its own. Forged onto armour via the Verisium Anvil (unlocked Act 1). Note: some new Kalguuran gems spend Runic Ward instead of mana."
+        }
+      ]
+    },
+    {
+      "id": "ailments",
+      "heading": "Ailments",
+      "blurb": "Elemental ailments in 0.5: Ignite, Shock, Chill, Freeze, Electrocute. Scorch / Brittle / Sap do NOT exist in PoE2.",
+      "table": {
+        "columns": ["Ailment", "Type", "Effect", "Mitigate with"],
+        "rows": [
+          ["Ignite", "Fire DoT", "Burns over 4s based on the fire hit", "Fire res, recovery, reduced duration, avoidance"],
+          ["Shock", "Lightning", "+20% damage taken (cap 100%), 4s", "Lightning res, ailment threshold, reduced effect"],
+          ["Chill", "Cold", "Slows action speed up to 50%, 2s", "Cold res, ailment threshold, reduced effect"],
+          ["Freeze", "Cold", "Buildup → frozen (can't act), 4s", "Cold res, ailment threshold, reduced buildup"],
+          ["Electrocute", "Lightning", "Interrupts actions for 5s (the lightning CC)", "Lightning res, ailment threshold, avoidance"],
+          ["Bleed", "Physical DoT", "15% of the phys hit/sec, 5s; double while moving", "Phys reduction at hit, stop moving, reduced duration"],
+          ["Poison", "Chaos DoT", "2s, stacks unlimited and adds together", "Chaos res, reduced duration, avoidance"]
+        ]
+      },
+      "cards": [
+        {
+          "title": "Ailment Threshold",
+          "body": "Governs how hard it is to apply Shock/Chill/Freeze/Ignite/Electrocute to you, comparing the raw pre-mitigation hit to your threshold. Base = 50% of max Life (players). Raise it with more max Life and \"+Ailment Threshold\" mods."
+        },
+        {
+          "title": "Stun Threshold (separate)",
+          "body": "Base ≈ your max Life; higher = harder to stun. Light Stun briefly interrupts; Heavy Stun (the yellow buildup bar) knocks down — but players can't be Heavy Stunned, only monsters. Physical hits and melee each fill it +50%."
+        }
+      ],
+      "note": "Bleed and Poison are not elemental ailments — they ignore the elemental ailment threshold."
+    },
+    {
+      "id": "targets",
+      "heading": "Targets & Breakpoints",
+      "table": {
+        "columns": ["What", "Aim for"],
+        "rows": [
+          ["All elemental resistances", "75% (overcap to ~135% raw)"],
+          ["Chaos resistance", "Positive while leveling → 75% endgame"],
+          ["Armour", "~36× a typical phys hit (= 75% reduction of it)"],
+          ["Physical / generic damage reduction", "90% cap"],
+          ["Max resistance (with +max mods)", "90% hard cap"]
+        ]
+      },
+      "note": "Life, ES, evasion and spirit targets are build-specific — the only hard caps are 75% resistance (→90%) and 90% damage reduction."
+    },
+    {
+      "id": "other",
+      "heading": "Other Layers Worth Knowing",
+      "cards": [
+        {
+          "title": "Endurance Charges",
+          "body": "The defensive charge (max 3) — each grants both physical and elemental damage reduction. Frenzy (speed) and Power (crit) are the offensive charges."
+        },
+        {
+          "title": "Fortification",
+          "body": "1% less damage taken from hits per stack — a strong, build-agnostic mitigation layer."
+        },
+        {
+          "title": "Additional Physical Damage Reduction",
+          "body": "Flat \"% additional Physical Damage Reduction\" mods stack on top of armour, all under the 90% cap."
+        },
+        {
+          "title": "Recovery & Dodge Roll",
+          "body": "Life regen, flasks, leech, Recoup and gain-on-hit/kill keep you topped up. Dodge Roll grants i-frames for most of its animation — an active avoidance layer. (0.5 nerfed leech: one instance per resource, no instant leech.)"
+        },
+        {
+          "title": "No Spell Suppression",
+          "body": "PoE2 removed the attack/spell split — \"a hit is just a hit\" — so evasion and block apply to everything. Ignore PoE1 spell-suppression advice."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    { "key": "maxroll-def", "label": "Maxroll — Defence Guide", "url": "https://maxroll.gg/poe2/getting-started/defence-guide" },
+    { "key": "conquestcapped", "label": "ConquestCapped — 0.5 Gearing Guide", "url": "https://conquestcapped.com/guides/path-of-exile-2/poe-2-gearing-guide/" },
+    { "key": "mobalytics-res", "label": "Mobalytics — Resistances", "url": "https://mobalytics.gg/poe-2/guides/resistances" },
+    { "key": "poe2wiki-res", "label": "PoE2 Wiki — Resistance", "url": "https://www.poe2wiki.net/wiki/Resistance" },
+    { "key": "fextralife-ailments", "label": "Fextralife — Status Ailments", "url": "https://pathofexile2.wiki.fextralife.com/Status+Ailments" }
+  ]
+}

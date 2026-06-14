@@ -101,3 +101,38 @@ export interface ClassData {
   classes: ClassInfo[];
   archetypeLabels: Record<Archetype, string>;
 }
+
+// ---- Generic "reference" cheatsheet (explanatory sheets, e.g. Resistances) ----
+
+export interface RefCard {
+  title: string;
+  /** Optional short highlighted value, e.g. a cap. */
+  value?: string;
+  body: string;
+  /** "warn" renders a caution callout (e.g. verify-in-game). */
+  flag?: 'warn';
+}
+
+export interface RefTable {
+  columns: string[];
+  rows: string[][];
+}
+
+export interface RefSection {
+  id: string;
+  heading: string;
+  blurb?: string;
+  table?: RefTable;
+  cards?: RefCard[];
+  /** A closing note under the section. */
+  note?: string;
+}
+
+export interface ReferenceSheet {
+  title: string;
+  patch: string;
+  lastVerified: string;
+  intro: string;
+  sections: RefSection[];
+  sources: SourceRef[];
+}

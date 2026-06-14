@@ -1,0 +1,22 @@
+---
+import { SHEETS } from '../data/sheets';
+
+const baseNoSlash = import.meta.env.BASE_URL.replace(/\/$/, '');
+const here = Astro.url.pathname.replace(/\/$/, '');
+
+const isHome = here === baseNoSlash;
+const isActive = (slug: string) => here.endsWith('/' + slug);
+
+const href = (slug: string) => (slug ? `${baseNoSlash}/${slug}` : `${baseNoSlash}/`);
+---
+
+<nav class="site-nav" aria-label="Cheatsheets">
+  <a href={href('')} class={isHome ? 'active' : ''}>Home</a>
+  {
+    SHEETS.map((s) => (
+      <a href={href(s.slug)} class={isActive(s.slug) ? 'active' : ''}>
+        {s.short}
+      </a>
+    ))
+  }
+</nav>

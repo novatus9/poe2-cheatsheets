@@ -1,0 +1,107 @@
+.ref-section { margin: 0 0 28px; }
+.ref-heading {
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--border);
+}
+.ref-blurb { margin: 0 0 12px; color: var(--text-soft); font-size: 0.92rem; }
+.ref-note {
+  margin: 10px 0 0;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  background: var(--surface-2);
+  border-radius: 8px;
+  padding: 8px 11px;
+}
+
+/* ---- Tables ---- */
+.table-wrap { overflow-x: auto; }
+.ref-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  font-size: 0.9rem;
+}
+.ref-table th,
+.ref-table td {
+  text-align: left;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.ref-table thead th {
+  background: var(--surface-2);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-soft);
+}
+.ref-table tbody tr:last-child td { border-bottom: 0; }
+.ref-table td:first-child { font-weight: 600; white-space: nowrap; }
+.ref-table td:nth-child(2) { color: var(--accent-strong); font-weight: 600; }
+
+/* ---- Cards ---- */
+.ref-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+  align-items: start;
+}
+.ref-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+  padding: 12px 14px;
+  box-shadow: var(--shadow);
+}
+.ref-card.warn { border-left-color: var(--crit); }
+.ref-card-head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.ref-card-head h3 { margin: 0; font-size: 0.98rem; }
+.ref-card-value {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-strong);
+  background: var(--surface-2);
+  border-radius: 999px;
+  padding: 1px 9px;
+}
+.ref-card p { margin: 6px 0 0; font-size: 0.88rem; color: var(--text-soft); line-height: 1.5; }
+
+/* ---- Mobile: stack table rows into cards ---- */
+@media (max-width: 600px) {
+  .ref-table { font-size: 0.88rem; }
+  .ref-table thead { display: none; }
+  .ref-table,
+  .ref-table tbody,
+  .ref-table tr,
+  .ref-table td { display: block; width: 100%; }
+  .ref-table tr {
+    border-bottom: 1px solid var(--border);
+    padding: 6px 0;
+  }
+  .ref-table tbody tr:last-child { border-bottom: 0; }
+  .ref-table td {
+    border: 0;
+    padding: 3px 12px;
+    display: flex;
+    gap: 10px;
+  }
+  .ref-table td::before {
+    content: attr(data-label);
+    flex: 0 0 38%;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-soft);
+    font-weight: 600;
+    padding-top: 2px;
+  }
+  .ref-table td:first-child { white-space: normal; font-weight: 700; }
+}

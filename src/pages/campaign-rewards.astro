@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import Cheatsheet from '../components/Cheatsheet.tsx';
+import campaign from '../data/campaign-rewards.json';
+import '../styles/cheatsheet.css';
+import type { CheatsheetData } from '../data/types';
+
+const data = campaign as CheatsheetData;
+---
+
+<Base title={`PoE2 ${data.title} — Cheatsheet (Patch ${data.patch})`}>
+  <div class="container">
+    <section class="sheet-hero">
+      <h1 class="sheet-title">{data.title}</h1>
+      <div class="badges">
+        <span class="pill">Patch {data.patch}</span>
+        <span class="pill">Verified {data.lastVerified}</span>
+        <span class="pill">{data.rewards.length} rewards</span>
+      </div>
+      <p class="intro">{data.intro}</p>
+    </section>
+
+    <Cheatsheet client:load data={data} />
+  </div>
+</Base>
