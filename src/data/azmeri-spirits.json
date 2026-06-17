@@ -6,15 +6,15 @@
   "sections": [
     {
       "id": "spirits",
-      "heading": "The Spirits",
-      "blurb": "Four spirit types. Spirits possess monsters, get Empowered (50%–300%) by that monster's strength, and pass their absorbed value along the kill chain. The two Sacred Spirits are the real multipliers — find them early.",
+      "heading": "The Spirits (Azmerian Wisps)",
+      "blurb": "Azmerian wisps flee from you and possess nearby monsters. A possessed normal becomes \"Wisp-Touched\"; a fully-possessed rare/unique is \"Haunted by the Wisp\" and drops a Talisman. Wisps get Empowered (50%–300%) by the monster they ride and pass their absorbed value along the kill chain. There are four varieties — Wild, Vivid, Primal, Sacred — and for this strategy you push Vivid spawn chance hardest while hunting the two Sacred sub-types, which are the real multipliers.",
       "table": {
-        "columns": ["Spirit", "Best for", "What it does"],
+        "columns": ["Wisp", "Theme / item conversions", "What it does"],
         "rows": [
-          ["Vivid", "Item Quantity / Rarity", "The bread-and-butter loot multiplier. Push its spawn chance hard (see Atlas tree)."],
-          ["Wild", "Targeted drops", "Better for specific drop pools (e.g. Rite of Passage content)."],
-          ["Fox (Sacred)", "Rare → Unique", "Unconditionally upgrades any Rare it possesses into a Unique monster, eating the other spirits on that mob during conversion. Carries a hidden explosive Item Rarity mod."],
-          ["Rabbit (Sacred)", "Multiplication loop", "Revives the possessed enemy 0–8× on death — each revive re-runs the whole loop. Hidden mod forces the mob to drop only one base type (e.g. only maps, or only rings). Even a failed revive transfers the spirit to a surviving Rogue Exile."]
+          ["Vivid", "Speed, crit, evasion — Dexterity items", "The bread-and-butter loot multiplier for this strategy: +100% crit chance and +100% evasion, faster move/skill speed when fully possessed. Push its spawn chance hard (Unseen Rivers, see Atlas tree)."],
+          ["Wild", "Phys / elemental — Strength items", "Wisp-Touched gain stun buildup, toughness and armour; ~200% increased Rarity of items dropped. Good for targeted Strength-based drop pools."],
+          ["Primal", "Elemental conversion & ailments — Intelligence items", "~80% increased Damage plus cold / poison / freeze mechanics; superior for sustained-damage, Intelligence-based conversions. Examples: Owl, Serpent, Primate."],
+          ["Sacred", "Premium — revive & transform", "The high-value tier: highest Rarity increases and Rare → Unique boss transformations. Comes as two sub-types, Fox and Rabbit (see below) — find them early."]
         ]
       },
       "cards": [
@@ -226,6 +226,7 @@
   ],
   "sources": [
     { "key": "reddit", "label": "r/PathOfExile2 — Korean Azmeri Stacking Guide (thread)", "url": "https://www.reddit.com/r/PathOfExile2/comments/1u3hi84/korean_azmeri_stacking_guide/" },
-    { "key": "gdoc", "label": "Korean Azmeri Stacking Guide (full doc, translated)", "url": "https://docs.google.com/document/d/e/2PACX-1vSnLFtZIIkkSRrYhXwWuad0PyzRC5vDJQLdmfXx-6cG3psRyxVTE1nVKBegiU9ZmhOb5PtJKRl_37Nx/pub" }
+    { "key": "gdoc", "label": "Korean Azmeri Stacking Guide (full doc, translated)", "url": "https://docs.google.com/document/d/e/2PACX-1vSnLFtZIIkkSRrYhXwWuad0PyzRC5vDJQLdmfXx-6cG3psRyxVTE1nVKBegiU9ZmhOb5PtJKRl_37Nx/pub" },
+    { "key": "poe2wiki-wisp", "label": "PoE2 Wiki — Azmerian wisp", "url": "https://www.poe2wiki.net/wiki/Azmerian_wisp" }
   ]
 }
