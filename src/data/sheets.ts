@@ -26,4 +26,11 @@ export const SHEETS: Sheet[] = [
     blurb: 'Resistance caps and penalties, the defensive layers (armour, evasion, energy shield, block), ailments, and the breakpoints to aim for.',
     status: 'live',
   },
+  {
+    slug: 'azmeri-spirits',
+    title: 'Azmeri Spirit Stacking',
+    short: 'Azmeri Stacking',
+    blurb: 'The high-investment Atlas farming loop — spirit types, the mandatory Atlas tree and Hilda notables, tablet setup, map picks, and the in-map execution order for dumping the swarm into premium loot.',
+    status: 'live',
+  },
 ];

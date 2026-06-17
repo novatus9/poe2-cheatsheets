@@ -1,0 +1,231 @@
+{
+  "title": "Azmeri Spirit Stacking",
+  "patch": "0.5.2",
+  "lastVerified": "2026-06-17",
+  "intro": "A high-investment Atlas farming strategy that snowballs Azmeri Spirits to extreme counts, then dumps the swarm into Rogue Exiles, Summoning Circles, Essences and premium Strongboxes for big Item Rarity payouts (Mageblood, Headhunter, Hinekora's Lock, Mirrors). Spirits possess nearby monsters and become Empowered 50%–300% by the influence of the monster they ride; they only move while tethered close to you and dissipate if left too far behind. The whole loop multiplies spirits across four tiers — getting the Atlas tree, Hilda notables and tablets right is what makes it work. ⚠️ This is a min-max endgame strategy, not a beginner sheet: expect ~200 Divine of build investment and ~7 Divine per map of tablets. Verify exact node wording and numbers in-game before committing.",
+  "sections": [
+    {
+      "id": "spirits",
+      "heading": "The Spirits",
+      "blurb": "Four spirit types. Spirits possess monsters, get Empowered (50%–300%) by that monster's strength, and pass their absorbed value along the kill chain. The two Sacred Spirits are the real multipliers — find them early.",
+      "table": {
+        "columns": ["Spirit", "Best for", "What it does"],
+        "rows": [
+          ["Vivid", "Item Quantity / Rarity", "The bread-and-butter loot multiplier. Push its spawn chance hard (see Atlas tree)."],
+          ["Wild", "Targeted drops", "Better for specific drop pools (e.g. Rite of Passage content)."],
+          ["Fox (Sacred)", "Rare → Unique", "Unconditionally upgrades any Rare it possesses into a Unique monster, eating the other spirits on that mob during conversion. Carries a hidden explosive Item Rarity mod."],
+          ["Rabbit (Sacred)", "Multiplication loop", "Revives the possessed enemy 0–8× on death — each revive re-runs the whole loop. Hidden mod forces the mob to drop only one base type (e.g. only maps, or only rings). Even a failed revive transfers the spirit to a surviving Rogue Exile."]
+        ]
+      },
+      "cards": [
+        {
+          "title": "Fox tactics",
+          "body": "Feed spirits in small pairs to convert several Rares into Uniques, OR ignore the Fox entirely and recover its spirit later by killing the possessed mob. Either way it ends up as a Rarity bomb."
+        },
+        {
+          "title": "Rabbit tactics",
+          "value": "0–8 revives",
+          "body": "Feed 4–5 spirits into the same mob. If a revive procs, the multiplication goes nuclear. NEVER clear Strongboxes while a Rabbit is alive — funnel spirits through it instead."
+        }
+      ]
+    },
+    {
+      "id": "atlas",
+      "heading": "Atlas Passive Tree — Mandatory Nodes",
+      "blurb": "These are the load-bearing nodes. Spec spirit spawn chance and the Powerful-Boss \"Overlord\" nodes first, then Rarity.",
+      "table": {
+        "columns": ["Node", "Effect"],
+        "rows": [
+          ["The Chosen Path", "100% increased chance of Azmeri Spirits — the core node."],
+          ["Sacred Sap", "Monsters possessed by Sacred Spirits also possess another random Spirit."],
+          ["Overlord's Influence", "Areas with Powerful Map Bosses contain an additional Azmeri Spirit."],
+          ["Overlord's Domain", "Areas with Powerful Map Bosses contain an additional Rogue Exile."],
+          ["Unseen Rivers", "100% increased chance for Vivid Spirits."],
+          ["Corrupted Lattices", "25% chance to duplicate Corrupted Essence monsters when released."],
+          ["History of the Ezomytes", "Ezomyte Cities count as Grass Areas."],
+          ["History of the Vaal", "Vaal Cities count as Forest Areas."],
+          ["Forest Mastery", "15% increased Rare Monsters in Forest Areas."],
+          ["Grass Mastery", "5% chance to upgrade Greater Currencies to Perfect in Grass Areas."],
+          ["The Journey Ahead", "10% increased Rarity of Items found."],
+          ["Nemesis Rising", "10% increased Rarity from Rare Monsters."],
+          ["Divined Blessing", "100% increased chance for Seeking Shrines."],
+          ["Fabled Showdown", "25% chance Shrine Buffs apply to the Boss for additional reward."]
+        ]
+      }
+    },
+    {
+      "id": "atlas-optional",
+      "heading": "Atlas Tree — Optional / Flavour Nodes",
+      "cards": [
+        {
+          "title": "Spirits do not dissipate",
+          "value": "Consistency",
+          "body": "Slower runs, but spirits never decay if left behind — guaranteed stacking. The safe default."
+        },
+        {
+          "title": "Spirits have 50% increased Movement Speed",
+          "value": "Speed",
+          "body": "Faster but riskier — spirits can outrun you and scatter. Pick this OR the no-dissipate node, by playstyle."
+        },
+        {
+          "title": "Call of the Spirit",
+          "body": "10% chance Forest Areas become Rogue Exile Hunting Grounds — more Exiles to dump spirits into."
+        },
+        {
+          "title": "Moths to the Flame",
+          "body": "Summoning Circles have 20% chance to summon an Azmeri Spirit."
+        },
+        {
+          "title": "Curious Spirits",
+          "body": "Shrines have 10% chance to release an Azmeri Spirit."
+        },
+        {
+          "title": "Exile pairing & traps",
+          "body": "Uncommon Alliances (10% Exiles in pairs), Famous Locals (15% City Exiles in pairs), Man Trap (10% Essence monsters become Rogue Exiles) — all add more dump targets."
+        }
+      ]
+    },
+    {
+      "id": "hilda",
+      "heading": "Hilda Atlas Master Notables",
+      "blurb": "Hilda is the master that gates the spirit-release mechanics. The first two are mandatory; the rest are a payoff-vs-risk choice.",
+      "cards": [
+        {
+          "title": "Call of the Spirits",
+          "value": "Mandatory",
+          "body": "Possessed Unique monsters guarantee a spirit release on death — keeps the chain alive."
+        },
+        {
+          "title": "Claimed Territories",
+          "value": "Mandatory",
+          "body": "Overlord nodes have a 45% chance to double their effects (more spirits/exiles on Powerful-Boss maps)."
+        },
+        {
+          "title": "Soul Eaters + Lethal Adaptation",
+          "body": "Maximum rewards, but extremely rippy bosses. For confident, tanky builds."
+        },
+        {
+          "title": "Breeding Season + Ancient Inscriptions",
+          "body": "Balanced profit boost — a safe middle option."
+        },
+        {
+          "title": "Will of the Draíocht",
+          "body": "Simplified, brain-dead runs — but spirits cannot possess Rares (lower ceiling)."
+        },
+        {
+          "title": "Patient Battue",
+          "body": "Spawns the maximum number of Uniques."
+        }
+      ]
+    },
+    {
+      "id": "tablets",
+      "heading": "Tablet Setup",
+      "blurb": "Recommended loadout: 1 Irradiated + 1 Abyss + 2 Overseers. ~7 Divine per map (1 Irradiated, ~2 each Overseer, ~2 Abyss). Mod priority is top-to-bottom.",
+      "table": {
+        "columns": ["Tablet", "Priority mods (top = most important)"],
+        "rows": [
+          ["Irradiated ×1", "+1 additional Rogue Exile (mandatory) → Azmeri % chance → 1–2 random mods → Item Rarity % → Summoning Circle % / Essence %"],
+          ["Overseer ×2", "+2 additional Azmeri Spirits (mandatory) → Azmeri % / Exile % → Item Rarity % → Summoning Circle % / Essence %"],
+          ["Abyss ×1", "+1 additional Azmeri Spirit → Abyss mods (e.g. chance for additional Abysses) → Exile % / Summoning Circle % → Item Rarity %"]
+        ]
+      },
+      "note": "Abysses inherit the absorbed-spirit properties of the monsters that spawn from them — feeding spirits in before an Abyss wave triggers more multiplication."
+    },
+    {
+      "id": "maps",
+      "heading": "Waystones & Maps",
+      "table": {
+        "columns": ["What", "Aim for"],
+        "rows": [
+          ["Waystone Item Rarity", "40% minimum, 50%+ target, 60%+ excellent"],
+          ["Scaling priority", "Rarity over Effectiveness / Quantity"],
+          ["4-tablet-slot maps", "Ezomyte City (Grass), Vaal City (Forest — avoid Temple of the Sun), Faridun"],
+          ["Grass biome (Ezomyte)", "Best for Sacred Spirit spawns"],
+          ["Forest biome (Vaal)", "Best for Rogue Exile mods"]
+        ]
+      }
+    },
+    {
+      "id": "multiplication",
+      "heading": "How Multiplication Snowballs",
+      "blurb": "Four tiers of synergy stacking on top of each other — each tier feeds the next.",
+      "table": {
+        "columns": ["Tier", "Engine"],
+        "rows": [
+          ["1", "Corrupted Lattices (25% Essence-monster duplication) + spirit release on death."],
+          ["2", "Rogue Exiles absorb and transfer spirits when they kill possessed Rares."],
+          ["3", "Sacred Sap — Sacred-Spirit mobs possess an additional random spirit."],
+          ["4", "Rabbit revives loop the previous three tiers, 0–8× per mob."]
+        ]
+      }
+    },
+    {
+      "id": "strongboxes",
+      "heading": "Strongbox Handling",
+      "blurb": "Key rule: Strongboxes don't release absorbed spirits — they only \"liberate\" one native spirit. But the Ambush waves they spawn inherit absorbed-spirit mods, which triggers multiplication. So save the premium boxes for the finale.",
+      "cards": [
+        {
+          "title": "Clear immediately",
+          "body": "Large (quantity only), Blacksmith's, Arcane and Armourer's boxes — pop them early so they don't accidentally eat spirits."
+        },
+        {
+          "title": "Researcher's — save",
+          "value": "Currency",
+          "body": "Targets Hinekora's Locks and Mirrors. Feed the swarm in as a finale."
+        },
+        {
+          "title": "Jeweller's — save",
+          "value": "Jewels / Rings / Belts",
+          "body": "Targets Mageblood and Headhunter."
+        },
+        {
+          "title": "Ornate — save",
+          "value": "Rarity multiplier",
+          "body": "Massive Item Rarity multiplier — boosts all premium drops."
+        },
+        {
+          "title": "Cryptic Key",
+          "body": "Use it to open a premium box twice when heavily spirit-stacked."
+        }
+      ],
+      "note": "⚠️ Never clear Strongboxes while a Rabbit spirit is alive — funnel spirits through them instead."
+    },
+    {
+      "id": "execution",
+      "heading": "In-Map Execution Order",
+      "blurb": "Streamlined loop. The priority kill order when spirits scatter: locate Azmeri → kill Exiles → kill Summoning Circles → kill Essences → pop premium Strongboxes.",
+      "table": {
+        "columns": ["Step", "Do"],
+        "rows": [
+          ["1. Initial sweep", "Kill all monsters except Uniques, Essences and premium Strongboxes. Feed nearby Azmeri into Abyss Rares, then kill them."],
+          ["2. Hunt Exiles", "Find the Rogue Exile carrying the most spirits and kill it."],
+          ["3. Boss retrieval", "If 3–4 spirits wander into the boss room, kill the Map Boss to recover them."],
+          ["4. Summoning Circles", "Feed the accumulated swarm into Summoning Circle bosses and execute them."],
+          ["5. Essences → Strongboxes", "Feed the swarm into Essences first, then funnel the resulting cluster into Researcher's / Ornate / Jeweller's boxes and open them."]
+        ]
+      },
+      "note": "Boss-kill timing is flexible, but a premature death halts multiplication — keep yourself alive above all."
+    },
+    {
+      "id": "build",
+      "heading": "Build Requirements",
+      "blurb": "You need an active-control, high-mobility build that can pace itself to preserve Exiles and not accidentally vacuum spirits.",
+      "cards": [
+        {
+          "title": "Want",
+          "body": "Active skill control, high mobility, strong single-target and clear, and solid survivability. The author runs a Sweep Martialist with ~200 Divine invested."
+        },
+        {
+          "title": "Avoid",
+          "value": "Auto / passive",
+          "body": "Minions, totems, traps, Twister, automatic Mirage Archer and other passive deployables — they kill on their own and break your pacing/spirit control."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    { "key": "reddit", "label": "r/PathOfExile2 — Korean Azmeri Stacking Guide (thread)", "url": "https://www.reddit.com/r/PathOfExile2/comments/1u3hi84/korean_azmeri_stacking_guide/" },
+    { "key": "gdoc", "label": "Korean Azmeri Stacking Guide (full doc, translated)", "url": "https://docs.google.com/document/d/e/2PACX-1vSnLFtZIIkkSRrYhXwWuad0PyzRC5vDJQLdmfXx-6cG3psRyxVTE1nVKBegiU9ZmhOb5PtJKRl_37Nx/pub" }
+  ]
+}
