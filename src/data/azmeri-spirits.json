@@ -6,15 +6,16 @@
   "sections": [
     {
       "id": "spirits",
-      "heading": "The Spirits (Azmerian Wisps)",
-      "blurb": "Azmerian wisps flee from you and possess nearby monsters. A possessed normal becomes \"Wisp-Touched\"; a fully-possessed rare/unique is \"Haunted by the Wisp\" and drops a Talisman. Wisps get Empowered (50%–300%) by the monster they ride and pass their absorbed value along the kill chain. There are four varieties — Wild, Vivid, Primal, Sacred — and for this strategy you push Vivid spawn chance hardest while hunting the two Sacred sub-types, which are the real multipliers.",
+      "heading": "The Spirits",
+      "blurb": "Four spirit types. Spirits possess monsters, get Empowered (50%–300%) by that monster's strength, and pass their absorbed value along the kill chain. The two Sacred Spirits are the real multipliers — find them early.",
       "table": {
-        "columns": ["Wisp", "Theme / item conversions", "What it does"],
+        "columns": ["Spirit", "Best for", "What it does"],
         "rows": [
-          ["Vivid", "Speed, crit, evasion — Dexterity items", "The bread-and-butter loot multiplier for this strategy: +100% crit chance and +100% evasion, faster move/skill speed when fully possessed. Push its spawn chance hard (Unseen Rivers, see Atlas tree)."],
-          ["Wild", "Phys / elemental — Strength items", "Wisp-Touched gain stun buildup, toughness and armour; ~200% increased Rarity of items dropped. Good for targeted Strength-based drop pools."],
-          ["Primal", "Elemental conversion & ailments — Intelligence items", "~80% increased Damage plus cold / poison / freeze mechanics; superior for sustained-damage, Intelligence-based conversions. Examples: Owl, Serpent, Primate."],
-          ["Sacred", "Premium — revive & transform", "The high-value tier: highest Rarity increases and Rare → Unique boss transformations. Comes as two sub-types, Fox and Rabbit (see below) — find them early."]
+          ["Vivid", "Item Quantity / Rarity", "The bread-and-butter loot multiplier. Push its spawn chance hard (see Atlas tree)."],
+          ["Wild", "Targeted drops", "Boosts Rarity on what it possesses; favours the Strength-based drop pool (e.g. Rite of Passage content)."],
+          ["Primal", "Targeted drops", "Like Wild, but favours the Intelligence-based drop pool."],
+          ["Fox (Sacred)", "Rare → Unique", "Unconditionally upgrades any Rare it possesses into a Unique monster, eating the other spirits on that mob during conversion. Carries a hidden explosive Item Rarity mod."],
+          ["Rabbit (Sacred)", "Multiplication loop", "Revives the possessed enemy 0–8× on death — each revive re-runs the whole loop. Hidden mod forces the mob to drop only one base type (e.g. only maps, or only rings). Even a failed revive transfers the spirit to a surviving Rogue Exile."]
         ]
       },
       "cards": [
