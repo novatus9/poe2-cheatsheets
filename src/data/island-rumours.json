@@ -1,0 +1,76 @@
+{
+  "title": "Island Rumours & Mapping",
+  "patch": "0.5.2",
+  "lastVerified": "2026-06-19",
+  "intro": "What each tavern rumour actually decodes to — the island it points at, its remnant/mod gimmick, the layout, and whether it's worth running. Ratings run S+ (drop everything) down to F (skip). Several \"old layout\" islands keep infinite revives, which is great for grinding remnants. ⚠️ Crowd-sourced from the community; map names and ratings shift between patches, so treat this as a starting read and verify in-game.",
+  "sections": [
+    {
+      "id": "rumours",
+      "heading": "Island Rumours",
+      "blurb": "Match the rumour phrase to its island. Sorted best-to-worst by community rating. The Notes column carries the layout and remnant gimmick.",
+      "table": {
+        "columns": ["Rumour", "Island / Map", "Remnant / Mods", "Rating", "Notes"],
+        "rows": [
+          ["Fallen Stars", "Something Moor", "Runestones", "S+", "Unique expedition. No enemies — a chain explosion adds rune sockets to one huge singular remnant. Top-tier."],
+          ["Cold as ice…", "Frigid Bluffs", "Old Expedition", "A+", "Great general monster-buffing remnants. Old layout, so infinite revives."],
+          ["Sulphite!", "Scorched Cay", "Increased Rarity", "A", "Good layout with rare-buffing remnants."],
+          ["Nothing to drink", "Stagnant Basin", "Oil", "A", "Decent open layout. Oil-derrick remnants that do big explodey damage."],
+          ["Endless Cliffs", "Craggy Peninsula", "Rarity / Rogue Exiles", "A", "Good open layout. Kin-totem remnants for rarer items; boss arena holds two Rogue Exiles."],
+          ["Something Fishy", "Bleached Shoals", "Gold", "B+", "Bad layout. Remnants give an all-resistance amulet."],
+          ["Unknown Ruins", "Exhumed Ruins", "Precursor Leylines", "B", "Many-stairs layout. Explode three leylines to activate a beacon → reveals a nearby Expedition logbook area, inheriting the sagas used to spawn the ruins."],
+          ["It's Warm", "Lush Island", "Exp / Beyond / Hoards", "B", "Openish layout. Increased-exp remnants; 30% chance to summon Beyond monsters on the beach; Arohangui's Hoard chests drop a lot of currency. Old layout, infinite respawns."],
+          ["It's dry at least", "Sloughed Gully", "Monster Effectiveness", "D", "20% monster-effectiveness remnants, poor layout."],
+          ["Wild / Roaming Free", "Grazed Prairie", "Azmeri Spirits", "D", "Azmeri-spirits layout. Bad remnants, good layout."],
+          ["Bleak and Awful", "Barren Atoll", "Strongbox", "F", "Good open layout, strongbox-gimmick map, gold-chest remnant, old layout (infinite revives) — but rated a skip."]
+        ]
+      }
+    },
+    {
+      "id": "unique-maps",
+      "heading": "Unique Maps",
+      "blurb": "Rumours that resolve to a unique map instead of a standard island.",
+      "table": {
+        "columns": ["Rumour", "Map", "Reward / Mods", "Rating"],
+        "rows": [
+          ["Reflective Waters / Fractured…", "Lake of Kalandra", "Ring Bases", "A"],
+          ["All that Glitters", "Castaway", "Gold", "A"],
+          ["Almost paradise", "Untainted Paradise", "Exp", "C"],
+          ["A good fellow", "Moment of Zen", "Seer", "C"]
+        ]
+      }
+    },
+    {
+      "id": "bosses",
+      "heading": "Boss Rumours",
+      "blurb": "Boss-island rumours, the island they spawn on, and which pinnacle boss waits there.",
+      "table": {
+        "columns": ["Rumour", "Island", "Boss", "Rating"],
+        "rows": [
+          ["\"Origin of the Fall…\"", "Obscure Island", "Olroth", "A"],
+          ["\"Stardrinker\"", "Secluded Temple", "Uhtred", "B"],
+          ["\"Last to Fall\"", "Mournful Cliffside", "Vorana", "B"],
+          ["\"End of the Circle\"", "Sprawling Jungle", "Medved", "B"]
+        ]
+      }
+    },
+    {
+      "id": "sagas",
+      "heading": "Sagas",
+      "blurb": "Sagas used to spawn content. Aldur's buffs Expeditions but is a gamble; the boss sagas drop a guaranteed boss node.",
+      "table": {
+        "columns": ["Saga", "Location", "Effect", "Rating"],
+        "rows": [
+          ["Aldur's", "—", "Buffs Expeditions", "S+ (is a gamble)"],
+          ["Olroth", "Obscure Island", "Boss node", "A"],
+          ["Uhtred", "Secluded Temple", "Boss node", "B+"],
+          ["Medved", "Strange Jungle", "Boss node", "B+"],
+          ["Vorana", "Mournful Cliffside", "Boss node", "B+"]
+        ]
+      },
+      "note": "Boss sagas inherited into Exhumed Ruins (the \"Unknown Ruins\" rumour) carry over to the revealed Expedition logbook area."
+    }
+  ],
+  "sources": [
+    { "key": "sheet", "label": "Community ratings spreadsheet", "url": "https://docs.google.com/spreadsheets/d/16YU8mSS7TdLPdmOunVjiPn_NrKVGfcnMkuMQDy8jgZA/edit?gid=0#gid=0" }
+  ]
+}

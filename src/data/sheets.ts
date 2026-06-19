@@ -33,4 +33,11 @@ export const SHEETS: Sheet[] = [
     blurb: 'The high-investment Atlas farming loop — spirit types, the mandatory Atlas tree and Hilda notables, tablet setup, map picks, and the in-map execution order for dumping the swarm into premium loot.',
     status: 'live',
   },
+  {
+    slug: 'island-rumours',
+    title: 'Island Rumours & Mapping',
+    short: 'Island Rumours',
+    blurb: 'Decode every tavern rumour to its island — the remnant/mod gimmick, the layout, and a best-to-worst rating. Plus unique maps, boss islands, and sagas.',
+    status: 'live',
+  },
 ];
